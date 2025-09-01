@@ -37,4 +37,5 @@ brew install jq \
   thefuck \
   whois \
   wget \
-  zoxide
+  zoxide \
+  iterm2
