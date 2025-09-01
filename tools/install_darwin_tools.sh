@@ -9,7 +9,15 @@ else
   echo "Homebrew detected - skipping install"
 fi
 
-echo "Installing packages..."
+if [ ! -d ${HOME}/.oh-my-zsh ]
+then
+  echo "Installing oh-my-zsh"
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+else
+  echo "oh-my-zsh detected - skipping install"
+fi
+
+echo "Installing Homebrew packages..."
 brew install jq \
   eza \
   bat \
