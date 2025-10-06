@@ -15,4 +15,7 @@ endif
 
 if has('nvim')
   " neovim-only settings here
+  set mouse=
+  set clipboard=
+  noremap Y yy
 endif
